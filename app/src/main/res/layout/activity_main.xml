@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Calculadora"
+        android:textColor="@color/red"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitulo"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Valor 1"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edtV1"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/txtV1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="Informe o valor aqui"
+        android:inputType="numberDecimal"
+
+        />
+
+    <TextView
+        android:id="@+id/txtV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtV1"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/valor_2"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edtV2"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/txtV2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="Informe o outro valor aqui"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnSomar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtV2"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/red"
+        android:text="+"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtV2"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/red"
+        android:text="-"
+        android:textSize="20dp"
+      />
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtV2"
+        android:layout_marginLeft="218dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/red"
+        android:text="/"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/btnMult"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtV2"
+        android:layout_marginLeft="285dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/red"
+        android:text="x"
+        android:textSize="20dp"
+        />
+
+
+</RelativeLayout>
